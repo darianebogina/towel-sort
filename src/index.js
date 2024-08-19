@@ -1,9 +1,15 @@
 module.exports = function towelSort (matrix) {
-    let str = '';
-    for (let i = 0; i < matrix[0].length; i++) {
-        for (let j = 0; j < matrix[0].length; j++) {
-            str += matrix[i][j];
+    let array = [];
+    for (let i = 0; i < matrix.length; i++) {
+        if ((i == 0) || (i % 2 == 0)){
+            for (let j = 0; j < matrix[0].length; j++) {
+                array.push(matrix[i][j]);
+            }
         }
+        else {
+            
+        }
+        
     }
-    return str.toArray();
+    return array;
 }
